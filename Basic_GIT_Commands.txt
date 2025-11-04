@@ -1,0 +1,15 @@
+GIT Commands:
+
+1. git init - initialize new git repository in your local system.creates a hidden .git folder
+2. git clone - clone (copy) existing git repository from github to your local system.
+3. git add . - add all modified and new files to the stagging area for commit
+4. git add <file_name> - add specific file to the stagging area for commit.
+5. git commit -m "1st commit" - commit/save the changes with comment msg for push on to the github
+6. git push origin main - push (upload) commited changes to the remote git repo main branch
+7. git pull origin main - pull(download) latest changes from github main branch to local system
+8. git status - check the status of modified,added or staged files.
+9. git log - view the commit history. use git log --oneline for short view.
+10. git branch - list all branches in repository
+11. git checkout -b bug_fix - creates new branch and switch to it.
+12.head / origin main - head : latest commit in your current local branch / origin : latest commit in your remote main branch.
+13. git merge - combine the changes from one branch to main branch.(ex merge bug_fixes into main branch)
