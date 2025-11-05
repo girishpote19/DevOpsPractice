@@ -13,3 +13,15 @@ GIT Commands:
 11. git checkout -b bug_fix - creates new branch and switch to it.
 12.head / origin main - head : latest commit in your current local branch / origin : latest commit in your remote main branch.
 13. git merge - combine the changes from one branch to main branch.(ex merge bug_fixes into main branch)
+
+================================================
+ADVANCED Git commands:
+1. git stash - keep the changes in local workspace without commiting those as backup.
+	[git stash pop / git stash apply] - reapply stash changes in workspace with this cmds diff is that with pop - reapply stash changes also remove from stash space but apply - cmd reapply stash changes in workspace and also keep in stash space without removing those.
+2. git rebase - its like merge changes from one branch to another by keeping commit history linear and clean , ex - working on feature branch and someone push changes on main branch so need to take latest changes in my feature brnahch so in that case use this cmd for take latest changes and keep commit history clean and liner
+git checkout feature-branch
+git rebase main 
+git push origin feature-branch --force (--force overwrite the changes forcefully)
+3. git cherry-pick - if we have to take any particuler commit from one branch to other branch in that case we can use that commit hashcode value with this cmd for speacific commit changes.
+4. git reset --soft head~1 - undo the last commit and keep the changes in stagging 
+5. git reset --hard head~1 - undo the last commit and discard the changes from stagging
